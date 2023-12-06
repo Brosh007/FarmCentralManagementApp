@@ -1,0 +1,93 @@
+﻿@model FArmer_Central_Managament_app.Models.Employee
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Register</title>
+    <style>
+        /* CSS styling for the registration form */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .button {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+            .button:hover {
+                background-color: #45a049;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Registration</h2>
+        <form method="post" asp-action="Register">
+            <div class="form-group">
+                <label for="EmployeeId">Employee ID:</label>
+                <input type="text" id="EmployeeId" name="EmployeeId" required value="@Model.EmployeeId" />
+            </div>
+            <div class="form-group">
+                <label for="EmpName">First Name:</label>
+                <input type="text" id="EmpName" name="EmpName" required value="@Model.EmpName" />
+            </div>
+            <div class="form-group">
+                <label for="EmpSurname">Last Name:</label>
+                <input type="text" id="EmpSurname" name="EmpSurname" required value="@Model.EmpSurname" />
+            </div>
+            <div class="form-group">
+                <label for="EmpEmail">Email:</label>
+                <input type="email" id="EmpEmail" name="EmpEmail" required value="@Model.EmpEmail" />
+            </div>
+            <div class="form-group">
+                <label for="EmpPassword">Password:</label>
+                <input type="password" id="EmpPassword" name="EmpPassword" required />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Register" class="button" />
+            </div>
+        </form>
+    </div>
+</body>
+</html>

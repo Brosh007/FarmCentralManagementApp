@@ -1,0 +1,126 @@
+﻿@model List<Product>
+
+@{
+    ViewData["Title"] = "Search Products by Name";
+}
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+
+    #main {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    header {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        color: #007bff;
+        font-size: 32px;
+        margin-top: 0;
+    }
+
+    h2 {
+        color: #007bff;
+        font-size: 24px;
+        margin-top: 20px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th,
+    td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 6px 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    .btn-primary {
+        padding: 6px 12px;
+        border-radius: 4px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+</style>
+
+<div id="main">
+    <header>
+        <h1>Search Products</h1>
+    </header>
+
+    @using (Html.BeginForm("SearchProductsByName", "Farmer", FormMethod.Post))
+    {
+        <div class="form-group">
+            <label for="searchTerm">Search by either Product name or by the Farmer ID:</label>
+            <input type="text" class="form-control" id="searchTerm" name="searchTerm" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Search</button>
+    }
+
+    <hr />
+
+    @if (Model != null && Model.Count > 0)
+    {
+        <h2>Search Results:</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Product ID</th>
+                    <th>Product Name</th>
+                    <th>Product Price</th>
+                    <th>Quantity</th>
+                    <th>Farmer ID</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var product in Model)
+                {
+                    <tr>
+                        <td>@product.ProductID</td>
+                        <td>@product.ProductName</td>
+                        <td>@product.ProductPrice</td>
+                        <td>@product.Quantity</td>
+                        <td>@product.FarmerID</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>No search results found.</p>
+    }
+</div>

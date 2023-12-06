@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\FArmer_Central_Managament_app.props" />
+</Project>

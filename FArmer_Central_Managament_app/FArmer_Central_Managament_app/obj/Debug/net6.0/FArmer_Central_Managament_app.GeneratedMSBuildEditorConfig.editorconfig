@@ -1,0 +1,91 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = FArmer_Central_Managament_app
+build_property.RootNamespace = FArmer_Central_Managament_app
+build_property.ProjectDir = C:\Users\broshie007\Desktop\vc\Third Year\First Sem\PROG7311\PROG7311 Part 2_St10090453\FArmer_Central_Managament_app\FArmer_Central_Managament_app\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\broshie007\Desktop\vc\Third Year\First Sem\PROG7311\PROG7311 Part 2_St10090453\FArmer_Central_Managament_app\FArmer_Central_Managament_app
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/broshie007/Desktop/vc/Third Year/First Sem/PROG7311/PROG7311 Part 2_St10090453/FArmer_Central_Managament_app/FArmer_Central_Managament_app/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/broshie007/Desktop/vc/Third Year/First Sem/PROG7311/PROG7311 Part 2_St10090453/FArmer_Central_Managament_app/FArmer_Central_Managament_app/Views/EmpReg/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wUmVnXFJlZ2lzdGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/broshie007/Desktop/vc/Third Year/First Sem/PROG7311/PROG7311 Part 2_St10090453/FArmer_Central_Managament_app/FArmer_Central_Managament_app/Views/Farmer/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFybWVyXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/broshie007/Desktop/vc/Third Year/First Sem/PROG7311/PROG7311 Part 2_St10090453/FArmer_Central_Managament_app/FArmer_Central_Managament_app/Views/Farmer/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFybWVyXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/broshie007/Desktop/vc/Third Year/First Sem/PROG7311/PROG7311 Part 2_St10090453/FArmer_Central_Managament_app/FArmer_Central_Managament_app/Views/Farmer/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFybWVyXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/broshie007/Desktop/vc/Third Year/First Sem/PROG7311/PROG7311 Part 2_St10090453/FArmer_Central_Managament_app/FArmer_Central_Managament_app/Views/Farmer/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFybWVyXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/broshie007/Desktop/vc/Third Year/First Sem/PROG7311/PROG7311 Part 2_St10090453/FArmer_Central_Managament_app/FArmer_Central_Managament_app/Views/Farmer/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFybWVyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/broshie007/Desktop/vc/Third Year/First Sem/PROG7311/PROG7311 Part 2_St10090453/FArmer_Central_Managament_app/FArmer_Central_Managament_app/Views/Farmer/SearchProductsByName.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFybWVyXFNlYXJjaFByb2R1Y3RzQnlOYW1lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/broshie007/Desktop/vc/Third Year/First Sem/PROG7311/PROG7311 Part 2_St10090453/FArmer_Central_Managament_app/FArmer_Central_Managament_app/Views/Product/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/broshie007/Desktop/vc/Third Year/First Sem/PROG7311/PROG7311 Part 2_St10090453/FArmer_Central_Managament_app/FArmer_Central_Managament_app/Views/Product/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/broshie007/Desktop/vc/Third Year/First Sem/PROG7311/PROG7311 Part 2_St10090453/FArmer_Central_Managament_app/FArmer_Central_Managament_app/Views/Product/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/broshie007/Desktop/vc/Third Year/First Sem/PROG7311/PROG7311 Part 2_St10090453/FArmer_Central_Managament_app/FArmer_Central_Managament_app/Views/Product/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/broshie007/Desktop/vc/Third Year/First Sem/PROG7311/PROG7311 Part 2_St10090453/FArmer_Central_Managament_app/FArmer_Central_Managament_app/Views/Product/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/broshie007/Desktop/vc/Third Year/First Sem/PROG7311/PROG7311 Part 2_St10090453/FArmer_Central_Managament_app/FArmer_Central_Managament_app/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/broshie007/Desktop/vc/Third Year/First Sem/PROG7311/PROG7311 Part 2_St10090453/FArmer_Central_Managament_app/FArmer_Central_Managament_app/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/broshie007/Desktop/vc/Third Year/First Sem/PROG7311/PROG7311 Part 2_St10090453/FArmer_Central_Managament_app/FArmer_Central_Managament_app/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/broshie007/Desktop/vc/Third Year/First Sem/PROG7311/PROG7311 Part 2_St10090453/FArmer_Central_Managament_app/FArmer_Central_Managament_app/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/broshie007/Desktop/vc/Third Year/First Sem/PROG7311/PROG7311 Part 2_St10090453/FArmer_Central_Managament_app/FArmer_Central_Managament_app/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-vstg03ybiu

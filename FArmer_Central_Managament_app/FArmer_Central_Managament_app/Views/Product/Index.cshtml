@@ -1,0 +1,174 @@
+﻿@model IEnumerable<FArmer_Central_Managament_app.Models.Product>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+@{
+    var isLoginPage = Context.Request.Path.Equals("/Account/Login", StringComparison.OrdinalIgnoreCase);
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        #main {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #007bff;
+            font-size: 32px;
+            margin-top: 0;
+        }
+
+        p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            font-weight: bold;
+            background-color: #007bff;
+        }
+
+        .actions {
+            white-space: nowrap;
+        }
+
+            .actions a {
+                margin-right: 10px;
+                padding: 6px 10px;
+                border-radius: 4px;
+                background-color: #007bff;
+                color: #fff;
+                text-decoration: none;
+            }
+
+                .actions a:hover {
+                    background-color: #0056b3;
+                }
+
+                .actions a:last-child {
+                    margin-right: 0;
+                }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #888;
+        }
+    </style>
+    <!-- Your head content here -->
+</head>
+<body>
+    <div id="main">
+        <header>
+            <h1>Farmer Portal</h1>
+        </header>
+        <div id="content">
+            <p>Welcome to the Farmer Portal! We are delighted to have you here as part of our farming community. This platform provides you with the tools and resources to manage your products, connect with buyers, and grow your agricultural business. Feel free to explore the features and functionalities available to enhance your farming journey. If you have any questions or need assistance, our support team is always ready to help. Happy farming!</p>
+
+            <p>
+                <a asp-action="Create" class="btn btn-primary">Create New</a>
+            </p>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th style="background-color: #007bff; color: #fff;">
+                            @Html.DisplayNameFor(model => model.ProductID)
+                        </th>
+                        <th style="background-color: #007bff; color: #fff;">
+                            @Html.DisplayNameFor(model => model.ProductName)
+                        </th>
+                        <th style="background-color: #007bff; color: #fff;">
+                            @Html.DisplayNameFor(model => model.ProductPrice)
+                        </th>
+                        <th style="background-color: #007bff; color: #fff;">
+                            @Html.DisplayNameFor(model => model.Quantity)
+                        </th>
+                        <th style="background-color: #007bff; color: #fff;">
+                            @Html.DisplayNameFor(model => model.FarmerID)
+                        </th>
+                        <th style="background-color: #007bff; color: #fff;"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.ProductID)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.ProductName)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.ProductPrice)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Quantity)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.FarmerID)
+                            </td>
+                            <td class="actions">
+                                @Html.ActionLink("Edit", "Edit", new { id = item.ProductID })
+                                @Html.ActionLink("Details", "Details", new { id = item.ProductID })
+                                @Html.ActionLink("Delete", "Delete", new { id = item.ProductID })
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+        <footer>
+            &copy; 2023 Farmer Central Management App. All rights reserved.
+        </footer>
+    </div>
+
+    @if (!isLoginPage)
+    {
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $(".nav-link").hide();
+            });
+        </script>
+    }
+</body>
+</html>

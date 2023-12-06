@@ -1,0 +1,154 @@
+﻿@model IEnumerable<FArmer_Central_Managament_app.Models.Farmer>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+
+    #main {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    header {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        color: #007bff;
+        font-size: 32px;
+        margin-top: 0;
+    }
+
+    p {
+        color: #555;
+        line-height: 1.6;
+    }
+
+    a {
+        color: #007bff;
+        text-decoration: none;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+
+    th, td {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    th {
+        font-weight: bold;
+        background-color: #007bff;
+        color: #fff;
+    }
+
+    .actions {
+        white-space: nowrap;
+    }
+
+        .actions a {
+            margin-right: 10px;
+            padding: 6px 10px;
+            border-radius: 4px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+        }
+
+            .actions a:hover {
+                background-color: #0056b3;
+            }
+
+            .actions a:last-child {
+                margin-right: 0;
+            }
+
+    footer {
+        text-align: center;
+        margin-top: 20px;
+        color: #888;
+    }
+</style>
+
+<div id="main">
+    <header>
+        <h1>Employee Dashboard</h1>
+    </header>
+    <div id="content">
+        <p>Welcome, employee! This is your dashboard where you can manage the farmers.</p>
+
+        <p>
+            <a asp-action="Create" class="btn btn-primary" style="background-color: #007bff;">Create New</a>
+        </p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th style="background-color: #007bff; color: #fff;">
+                        @Html.DisplayNameFor(model => model.FarmerId)
+                    </th>
+                    <th style="background-color: #007bff; color: #fff;">
+                        @Html.DisplayNameFor(model => model.Name)
+                    </th>
+                    <th style="background-color: #007bff; color: #fff;">
+                        @Html.DisplayNameFor(model => model.Surname)
+                    </th>
+                    <th style="background-color: #007bff; color: #fff;">
+                        @Html.DisplayNameFor(model => model.Email)
+                    </th>
+                    <th style="background-color: #007bff; color: #fff;">
+                        @Html.DisplayNameFor(model => model.Password)
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.FarmerId)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Surname)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Email)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Password)
+                        </td>
+                        <td class="actions">
+                            @Html.ActionLink("Edit", "Edit", new { id = item.FarmerId }, new { @class = "btn btn-primary", style = "background-color: #007bff;" })
+                            @Html.ActionLink("Details", "Details", new { id = item.FarmerId }, new { @class = "btn btn-primary", style = "background-color: #007bff;" })
+                            @Html.ActionLink("Delete", "Delete", new { id = item.FarmerId }, new { @class = "btn btn-primary", style = "background-color: #007bff;" })
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <footer>
+        &copy; 2023 Farmer Central Management App. All rights reserved.
+    </footer>
+</div>
